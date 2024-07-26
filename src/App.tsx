@@ -2,6 +2,8 @@ import './App.css';
 import styled from 'styled-components';
 import { Header } from './layout/header/Header';
 import { Main } from './layout/section/main/main';
+import { Skills } from './layout/section/skills/Skills';
+import { Works } from './layout/section/works/Works';
 
 
 function App() {
@@ -9,6 +11,9 @@ function App() {
         <div className="App">
             <Header/>
             <Main/>
+            <Skills/>
+            <Works/>
+
         </div>
     );
 }
@@ -20,3 +25,5 @@ const Title = styled.h1`
     text-align: center;
     color: #e91e63;
 `;
+
+

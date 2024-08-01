@@ -4,25 +4,37 @@ import styled from 'styled-components';
 
 
 
-export const Menu = (props: {menuItems: Array<string> }) => {
+export const HeaderMenu = (props: {menuItems: Array<string> }) => {
     return (
-        <StyledMenu>
+        <StyledHeaderMenu>
         <ul>
-
             {props.menuItems.map((item :string , index :number)=>{
-                return <li key={index}><a href="">{item}</a></li>
+                return <ListItem key={index}>
+                    <Link href="">{item}</Link>
+                    </ListItem>
             })}
-
         </ul>
-    </StyledMenu>
+    </StyledHeaderMenu>
     );
 };
 
-const StyledMenu = styled.nav `
+const StyledHeaderMenu = styled.nav `
     ul {
         display: flex;
         gap: 30px;
         justify-content: center;
     }
 
+`
+
+const ListItem = styled.li `
+
+`
+
+const Link = styled.a `
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    color: #7572d5;
 `

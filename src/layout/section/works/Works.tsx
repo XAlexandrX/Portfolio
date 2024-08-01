@@ -1,6 +1,6 @@
 import React from 'react';
 import { SectionTitle } from '../../../components/SectionTitle';
-import { Menu } from '../../../components/menu/Menu';
+import { HeaderMenu } from '../../../components/menu/Menu';
 import styled from 'styled-components';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Work } from './work/Work';
@@ -13,7 +13,7 @@ export const Works = () => {
     return (
         <StyledWorks>
             <SectionTitle>My Works</SectionTitle>
-            <Menu menuItems={worksItems}/>
+            <HeaderMenu menuItems={worksItems}/>
             <FlexWrapper justify={"space-around"}>
                 <Work title={"Social Network"} 
                       src={socialImg}

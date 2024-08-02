@@ -9,10 +9,10 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper align={"center"} justify={"space-around"}>
+                <FlexWrapper align={"center"} justify={"space-between"}>
                     <div>
-                        <span></span>
-                        <h2>I am Aleksandr Limarenko</h2>
+                        <SmallText>Hi There</SmallText>
+                        <Name>I am Svetlana Dyablo</Name>
                         <MainTitle>A Web Developer</MainTitle>
                     </div>
 
@@ -32,6 +32,7 @@ export const Main = () => {
 const StyledMain = styled.section `
     min-height: 100vh;
     background-color: #7e5858;
+    display: flex;
 
 
 `
@@ -48,5 +49,9 @@ const MainTitle =styled.h1`
 `
 
 const Name =styled.h2`
+    
+`
+
+const SmallText = styled.h2`
     
 `

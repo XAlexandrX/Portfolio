@@ -16,8 +16,9 @@ export const Main = () => {
                         <Name>I am <span>Svetlana Dyablo</span></Name>
                         <MainTitle>A Web Developer</MainTitle>
                     </div>
-
-                    <Photo src={photo} alt="#"/>
+                    <PhotoWrapper>
+                        <Photo src={photo} alt="#"/>
+                    </PhotoWrapper>
                 </FlexWrapper>
             </Container>
 
@@ -36,6 +37,23 @@ const StyledMain = styled.section `
     display: flex;
 
 
+`
+
+const PhotoWrapper = styled.div`
+    position: relative;
+    z-index: 0;
+
+    &::before {
+        content: "";
+        width: 360px;
+        height: 470px;
+        border: 5px solid ${theme.colors.accent};
+        
+        position: absolute;
+        top: -24px;
+        left: 24px;
+        z-index: -1;
+    }
 `
 
 const Photo = styled.img`

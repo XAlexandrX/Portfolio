@@ -2,20 +2,24 @@ import React from 'react';
 import styled from 'styled-components';
 import photo from '../../../assets/images/Photo.jpg'
 import { FlexWrapper } from '../../../components/FlexWrapper';
+import { Container } from '../../../components/Container';
 
 
 export const Main = () => {
     return (
         <StyledMain>
-            <FlexWrapper align={"center"} justify={"space-around"}>
-                <div>
-                    <span></span>
-                    <h2>I am Aleksandr Limarenko</h2>
-                    <MainTitle>A Web Developer</MainTitle>
-                </div>
+            <Container>
+                <FlexWrapper align={"center"} justify={"space-around"}>
+                    <div>
+                        <span></span>
+                        <h2>I am Aleksandr Limarenko</h2>
+                        <MainTitle>A Web Developer</MainTitle>
+                    </div>
 
-                <Photo src={photo} alt="#"/>
-            </FlexWrapper>
+                    <Photo src={photo} alt="#"/>
+                </FlexWrapper>
+            </Container>
+
         </StyledMain>
 
 

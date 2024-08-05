@@ -28,7 +28,7 @@ const StyledSkill = styled.div`
 `
 
 const SkillTitle = styled.h3`
-    
+    margin: 70px 0 15px;
 `
 
 const SkillText = styled.p`

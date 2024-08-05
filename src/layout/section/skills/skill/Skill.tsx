@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { Icon } from "../../../../components/icon/Icon"
+import { FlexWrapper } from "../../../../components/FlexWrapper"
 
 type SkillPropsType={
     iconId: string
@@ -11,9 +12,12 @@ type SkillPropsType={
 export const Skill =(props: SkillPropsType) => {
     return (
         <StyledSkill>
-            <Icon iconId={props.iconId}/>
-            <SkillTitle>{props.title}</SkillTitle>
-            <SkillText>{props.description}</SkillText>
+            <FlexWrapper direction={"column"} align={"center"}>
+                <Icon iconId={props.iconId}/>
+                <SkillTitle>{props.title}</SkillTitle>
+                <SkillText>{props.description}</SkillText>
+            </FlexWrapper>
+
         </StyledSkill>
     )
 }

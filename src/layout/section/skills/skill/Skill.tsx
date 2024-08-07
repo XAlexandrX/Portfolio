@@ -13,7 +13,11 @@ export const Skill =(props: SkillPropsType) => {
     return (
         <StyledSkill>
             <FlexWrapper direction={"column"} align={"center"}>
-                <Icon iconId={props.iconId}/>
+
+                <IconWrapper>
+                    <Icon iconId={props.iconId}/>
+                </IconWrapper>
+
                 <SkillTitle>{props.title}</SkillTitle>
                 <SkillText>{props.description}</SkillText>
             </FlexWrapper>
@@ -25,6 +29,24 @@ export const Skill =(props: SkillPropsType) => {
 const StyledSkill = styled.div`
     width: 380px;
     padding: 62px 20px 40px;
+`
+
+const IconWrapper = styled.div`
+    position: relative;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        height: 80px;
+        width:80px;
+        background-color: rgba(255,255,255, 0.1);
+        transform: rotate(45deg) translate(-50%, -50%);
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform-origin: top left;
+    }
 `
 
 const SkillTitle = styled.h3`

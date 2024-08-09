@@ -1,6 +1,6 @@
 import React from 'react';
 import { SectionTitle } from '../../../components/SectionTitle';
-import { HeaderMenu } from '../../../components/menu/Menu';
+import { TabMenu } from './tabMenu/TabMenu';
 import styled from 'styled-components';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Work } from './work/Work';
@@ -15,7 +15,7 @@ export const Works = () => {
         <StyledWorks>
             <Container>
                 <SectionTitle>My Works</SectionTitle>
-                <HeaderMenu menuItems={worksItems}/>
+                <TabMenu menuItems={worksItems}/>
                 <FlexWrapper justify={"space-between"}>
                     <Work title={"Social Network"} 
                         src={socialImg}
@@ -31,6 +31,5 @@ export const Works = () => {
 }
 
 const StyledWorks =styled.section`
-    min-height: 100vh;
-    background-color: #787378;
+
 `  ;

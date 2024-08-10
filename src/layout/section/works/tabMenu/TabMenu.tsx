@@ -4,9 +4,9 @@ import styled from 'styled-components';
 
 
 
-export const HeaderMenu = (props: {menuItems: Array<string> }) => {
+export const TabMenu = (props: {menuItems: Array<string> }) => {
     return (
-        <StyledHeaderMenu>
+        <StyledTabMenu>
         <ul>
             {props.menuItems.map((item :string , index :number)=>{
                 return <ListItem key={index}>
@@ -14,11 +14,11 @@ export const HeaderMenu = (props: {menuItems: Array<string> }) => {
                     </ListItem>
             })}
         </ul>
-    </StyledHeaderMenu>
+    </StyledTabMenu>
     );
 };
 
-const StyledHeaderMenu = styled.nav `
+const StyledTabMenu = styled.nav `
     ul {
         display: flex;
         gap: 30px;
@@ -32,9 +32,9 @@ const ListItem = styled.li `
 `
 
 const Link = styled.a `
-    font-family: "Josefin Sans", sans-serif;
     font-weight: 400;
-    font-size: 50px;
-    text-align: center;
-    color: #7572d5;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
 `

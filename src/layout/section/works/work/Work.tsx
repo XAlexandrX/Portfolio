@@ -50,6 +50,7 @@ const StyledWork = styled.div`
 const ImageWrapper = styled.div`
     position: relative;
     &:hover{
+
         &::before{
         content:"";
         position: absolute;
@@ -60,6 +61,24 @@ const ImageWrapper = styled.div`
         backdrop-filter: blur(4px);
         background: rgba(0, 0, 0, 0.3);
     }
+
+    ${Button} {
+        opacity: 1;
+        }
+    }
+
+    ${Button} {
+        opacity: 0;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+    &::before{
+        width: 100%;
+        height: 100%;
+        }
+
     }
 
 `

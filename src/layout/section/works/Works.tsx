@@ -19,10 +19,10 @@ export const Works = () => {
                 <FlexWrapper justify={"space-between"}>
                     <Work title={"Social Network"} 
                         src={socialImg}
-                        text={"Text text text"}/>
+                        text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit."}/>
                     <Work title={"Timer"} 
                         src={TimerImg}
-                        text={"Text2 Text2 Text2"}/>
+                        text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim"}/>
                 </FlexWrapper>
             </Container>
         </StyledWorks>

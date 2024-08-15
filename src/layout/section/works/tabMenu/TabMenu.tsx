@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { theme } from '../../../../styles/Theme';
 import { Link } from '../../../../components/Link';
 
 
@@ -31,7 +30,5 @@ const StyledTabMenu = styled.nav `
 `
 
 const ListItem = styled.li `
-    position: relative;
-    z-index: 0;
 
 `

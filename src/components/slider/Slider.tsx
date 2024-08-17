@@ -40,7 +40,11 @@ const Text = styled.p`
 `
 
 const Name = styled.span`
-    
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 `
 
 const Pagination = styled.div`

@@ -14,7 +14,7 @@ export const Button =styled.button`
     &:hover{
         &::before{
         height: 100%;
-        width: 900%;
+        width: 100%;
         }
     }
 

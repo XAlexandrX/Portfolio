@@ -14,7 +14,7 @@ export const Link = styled.a `
 
     &:hover {
         &::before {
-            height: 10px;
+            height: 20px;
         }
 
     }
